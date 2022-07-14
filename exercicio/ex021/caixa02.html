@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grouping tagas</title>
+    <style>
+        body {
+            background-color: antiquewhite;
+            font-family: 'Courier New', Courier, monospace;
+            margin: 0px;
+        }
+        .oi{
+        
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+
+        }
+        header{
+            background-color: white;
+            padding: 5px;
+            border-radius: 5px;
+            margin: 10px;
+
+        }
+        
+        
+        nav > a#teste ul{
+            display: none;
+            font-family: 'arial,monospace';
+        }
+        nav > a#teste:hover ul{
+            display:flex;
+            flex-direction: column;
+            justify-content:end;
+            
+        }
+        nav > a{
+            text-decoration: none;
+            padding:3px;
+            margin: 30px;
+            background-color: rgb(201, 199, 199);
+            box-shadow: 2px 1px 1px rgba(0, 0, 0, 0.342);
+           
+            
+        }
+        nav > a:hover {
+            text-decoration: underline;
+        }
+        main{
+            background-color: aliceblue;
+            margin: 10px;
+            border-radius: 10px;
+            box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.274);
+
+        }
+        h2{
+            text-align: center;
+        }
+        footer{
+            background-color: cadetblue;
+            text-align: center;
+            color: white;
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>nome do Site</h1>
+        <div class="oi">
+        <nav class="1">
+            <a href="#" id="teste">link <ul>
+                <li>oi</li>
+                <li>ola</li> 
+                <li>pode</li>
+
+            </ul></a></nav>
+            <nav><a href="#">link</a></nav>
+            <nav><a href="#">link</a></nav>
+            <nav><a href="#">link</a></nav>
+        </div>
+    </header>
+    <main>
+        <section id="noticia">
+            <article>
+                <h2>noticia sobre o mundo</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sed doloremque neque quis mollitia, impedit repellat ducimus, necessitatibus id temporibus ad quaerat ipsum exercitationem deleniti nisi, tempore excepturi animi quisquam recusandae?</p>
+                <aside>
+                    <p>Artigo escrito por José da Silva</p>
+                </aside>
+            </article>
+
+        </section>
+    </main>
+    <footer>
+        <p>distribuidora LTDA</p>
+    </footer>
+</body>
+</html>

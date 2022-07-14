@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplos de hover</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0px;
+        }
+        div{
+            display: inline-table;
+            
+            background-color: aqua;
+        }
+        div#genero > ul{
+            display: none;
+        }
+        div#genero:hover > ul{
+            display: block;
+            color: white;
+            background-color: aqua;
+            width: 80px;
+        }
+        div#classificacao > ul{
+            display: none;
+        }
+        div#classificacao:hover > ul{
+            display: block;
+            color: white;
+            background-color: aqua;
+            width: 80px;
+        }
+        h1::before{
+            content: '>>';
+            font-weight: lighter;
+        }
+        h1::after{
+            content: '<<';
+            font-weight: lighter;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Exemplo de hover</h1>
+    <p>Passe o mouse sobre o texto abaixo</p>
+    <div id="genero">
+        
+        Passe o mouse aqui
+        <ul>
+            <li>drama</li>
+            <li>terror</li>
+            <li>comedia</li>
+            <li>romance</li>
+        </ul>
+
+    </div>
+    <div id="classificacao">
+        classificação
+        <ul>
+            <li>adulto</li>
+            <li>terror</li>
+            <li>romance</li>
+            <li>comedia</li>
+
+        </ul>
+    </div>
+    <p>Fim do exemplo</p>
+    
+</body>
+</html>
