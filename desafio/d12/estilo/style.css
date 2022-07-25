@@ -36,7 +36,7 @@ header > h1{
 } 
 header > p{
     padding-bottom: 50px;
-    font-size: 1.5em;
+    font-size: 2.5em;
 }   
 a{  
     font-weight: bolder;
@@ -49,9 +49,9 @@ a:hover{
 section{
     padding-top: 10vh;
     padding-bottom: 10vh;
-    line-height: 2em;
+    line-height: 3em;
     padding-left: 30px;
-    font-size: 1.5em;
+    font-size: 2em;
     font-family:'Sriracha';
 }
 
@@ -61,15 +61,27 @@ section{
 }
 
 .imagem{
-    
+    background-attachment: fixed;
     background-color: rgb(51, 51, 51);
     color: white;
+    box-shadow: inset 6px 6px 13px rgba(0, 0, 0, 0.315);
+    background-size: cover;
 }
 .imagem > p{
-    background-color: rgba(0, 0, 0, 0.13);
+    
+    background-color: rgba(0, 0, 0, 0.267);
     display: inline-block;
     padding: 10px;
+    text-shadow: 1px 1px 0px black;
 }
+#img01{
+    background-image: url('../imagens/background001.jpg');
+    background-position: right center;
+}
+#img02{
+    background-image: url('../imagens/background002.jpg');
+    
+}    
 footer{
     color: white;
     background-color: black;
